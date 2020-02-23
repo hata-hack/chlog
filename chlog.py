@@ -62,8 +62,8 @@ def find_sig(file_list, sig_list):
                     if sig in line:
                         #print('Found {', sig, '} in ', name)
                         sgud = ('Found {' + sig + '} in ' + name)
-                        logfile.write(sgud)
-                        array_good_find.append(sgud, '/r/n')
+                        logfile.write(sgud + '/r/n')
+                        array_good_find.append(sgud)
 
     logfile.close()
     return len(array_good_find)
